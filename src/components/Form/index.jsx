@@ -14,13 +14,13 @@ function Form() {
     }else{
       number.toString();
       for(var i = 0 ; i < number.length; i++){
-        if(number.charAt(i) != '1' && number.charAt(i) != '0'){
+        if(number.charAt(i) !== '1' && number.charAt(i) !== '0'){
           console.log(number.charAt(i));
           binary = false;
         }
       }
       console.log(binary);
-      if(binary == true){
+      if(binary === true){
         console.log("passei no if")
         setResult(parseInt(number, 2).toString(10));
       }else{
